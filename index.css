@@ -1,0 +1,27 @@
+body 
+{
+    position: relative;
+    text-align: center;
+}
+.contenedor
+{
+    position: relative;
+    display: inline-block;
+}
+.letras
+{
+    position: relative;
+    font-size: 64px;
+    color: white;
+}
+.imagen_principal 
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 1;
+}
