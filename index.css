@@ -3,10 +3,13 @@ body
     position: relative;
     text-align: center;
 }
-.contenedor
+
+.contenedor_botones
 {
-    position: absolute;
-    display: block;
+    background-color: #73222b;
+    width: 100%;
+    padding: 35px;
+
 }
 .letras
 {
@@ -23,7 +26,11 @@ body
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 50px; /* Agrega espacio debajo de la imagen */ 
+    margin-bottom: 0px; /* Agrega espacio debajo de la imagen */ 
+}
+.boton
+{
+    display: flex;
 }
 @font-face
 {
