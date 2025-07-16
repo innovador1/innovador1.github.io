@@ -11,6 +11,12 @@ body
     padding: 35px;
 
 }
+.contenedor_sectores
+{
+    background-color: blue;
+    width: 100%;
+    padding: auto;
+}
 .letras
 {
     position: absolute;
