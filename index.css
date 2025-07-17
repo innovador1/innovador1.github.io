@@ -17,6 +17,12 @@ body
     width: 100%;
     padding: auto;
 }
+.contenedor_sectores_th
+{
+    background-color: red;
+    width: 100%;
+    padding: auto;
+}
 .letras
 {
     position: absolute;
