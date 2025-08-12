@@ -1,51 +1,74 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+
+
 body 
 {
     position: relative;
     text-align: center;
 }
 
-.contenedor_botones
-{
-    background-color: #73222b;
-    width: 100%;
-    padding: 35px;
 
+@font-face {
+    font-family: "fuentetitulo";
+    src: url("fuentes/now.alt-thin.otf") format("opentype");
+    font-weight: 200; /* ultra delgado */
 }
-.contenedor_sectores
-{
-    background-color: blue;
-    width: 100%;
-    padding: auto;
-}
-.contenedor_sectores_th
-{
-    background-color: red;
-    width: 100%;
-    padding: auto;
-}
-.letras
-{
+
+.letras {
     position: absolute;
-    font-size: 90px;
+    font-size: 90px; /* tamaño del texto */
     color: white;
     top: 45%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: "fuentetitulo",sans-serif;
+    transform: translate(-50%, -50%);
+    font-family: "fuentetitulo", sans-serif;
+   white-space: nowrap;
 }
+
 .imagen_principal 
 {
+    
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 0px; /* Agrega espacio debajo de la imagen */ 
+    margin: 0;        /* quita todo margen */
+    padding: 0;       /* quita todo padding */
+        border: none;     /* sin bordes */
 }
-.boton
-{
+.o{
+    filter: blur(6px);
+}
+
+.cuadrado{
+    height: 130px;
+    width: 100%;
+    background-color: #d3cfc5;
+}
+#Inicio{
+    position: relative;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* para que el blur no se salga */
 }
-@font-face
-{
-    font-family: "fuentetitulo";
-    src: url("fuentes\NowAlt-Regular.otf")format("truetype");
+
+#Inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Imagenes/caratula.PNG);
+    background-size: cover;
+    background-position: 40% center; /* ajusta a la izquierda */
+    filter: blur(6px);
+    z-index: -1; /* pone la imagen detrás del contenido */
 }
