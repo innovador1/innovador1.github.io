@@ -990,7 +990,7 @@ body
   align-items: center;
   justify-content: center;
   gap: 30px;
-
+  font-family: "fuentetitulo", sans-serif;
 }
 #cajas_redes{
   display: flex;
@@ -1022,17 +1022,14 @@ body
 }
 .caja p{
   font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
 }
 #contenedor_Red h1{
   font-size: 70px;
   color: white;
-  font-family: "Chewy", system-ui;
   margin-bottom: 50px;
 }
 #contenedor_Red p{
-  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
   font-weight: bolder;
 }
